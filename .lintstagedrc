@@ -1,0 +1,20 @@
+{
+  "*.{js,jsx,ts,tsx}": [
+    "prettier --ignore-unknown  --write",
+    "eslint --fix"
+  ],
+  "{!(package)*.json,*.code-snippets,.!({browserslist,nvm})*rc}": [
+    "prettier --write--parser json"
+  ],
+  "package.json": ["prettier --write"],
+  "*.vue": [
+    "prettier --write",
+    "eslint --fix",
+    "stylelint --fix --allow-empty-input"
+  ],
+  "*.{css,scss,html}": [
+    "prettier --ignore-unknown --write",
+    "stylelint --fix --allow-empty-input"
+  ],
+  "*.md": ["prettier --ignore-unknown --write"]
+}

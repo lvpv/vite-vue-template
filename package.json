@@ -7,10 +7,11 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
+    "typecheck": "tsc --noEmit && vue-tsc --noEmit --skipLibCheck",
     "lint:eslint": "eslint src --ext .js,.vue,.ts,.jsx,.tsx --ignore-path .gitignore --fix",
     "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js,cjs,json,md}\"",
     "lint:style": "stylelint \"./**/*.{css,less,scss,vue,html}\" --fix",
-    "lint-staged": "lint-staged",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:style",
     "prepare": "husky"
   },
   "dependencies": {
