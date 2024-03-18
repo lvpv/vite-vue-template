@@ -10,7 +10,7 @@
     "lint:eslint": "eslint src --ext .js,.vue,.ts,.jsx,.tsx --ignore-path .gitignore --fix",
     "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js,cjs,json,md}\"",
     "lint:style": "stylelint \"./**/*.{css,less,scss,vue,html}\" --fix",
-    "lint:lint-staged": "lint-staged",
+    "lint-staged": "lint-staged",
     "prepare": "husky"
   },
   "dependencies": {
