@@ -4,8 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "bootstrap": "pnpm install",
+    "serve": "pnpm dev",
+    "dev": "vite --mode dev",
+    "build:dev": "vue-tsc && vite build --mode dev",
+    "build:prod": "vue-tsc && vite build --mode prod",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit && vue-tsc --noEmit --skipLibCheck",
     "lint:eslint": "eslint src --ext .js,.vue,.ts,.jsx,.tsx --ignore-path .gitignore --fix",
